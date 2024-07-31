@@ -1,0 +1,15 @@
+@use "../abstracts" as var;
+
+.header {
+    background: var.$background-primary-color;
+    padding: 44px 0 20px;
+    
+    .content {
+        display: flex;
+        align-items: center;
+    }
+
+    button.btn {
+        min-width: 144px;
+    }
+}

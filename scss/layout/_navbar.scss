@@ -1,0 +1,33 @@
+@use "../abstracts" as var;
+
+.navbar {
+    margin-left: auto;
+    
+    ul {
+        display: flex;
+        gap: 42px;
+        margin-right: 70px;
+
+        li {
+            line-height: 1.75;
+            cursor: pointer;
+            position: relative;
+
+            &:hover,&.active {
+                text-shadow: 1px 0 0 currentColor;
+            }
+
+            &.active::after {
+                content: '';
+                position: absolute;
+                width: 12px;
+                height: 2px;
+                left: 0;
+                bottom: 0;
+                background: var.$text-bold-color;
+            }
+
+        }
+
+    }
+}
