@@ -1,14 +1,19 @@
 @use "../abstracts/variables" as var;
 
-@mixin headingFont ($weight : 700, $size : 3.8rem, $color: var.$text-bold-color) {
-    font-family: "Sen",sans-serif;
-    font-weight: $weight;
-    font-size: $size;
-    color : $color
+@mixin headingFont($weight: 700, $size: 3.8rem, $color: var.$text-bold-color) {
+  font-family: "Sen", sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
 }
 
-@mixin paragraphFont($weight : 400, $size : 1.6rem, $color: var.$text-light-color) {
-    font-weight: $weight;
-    font-size: $size;
-    color : $color;
+@mixin paragraphFont(
+  $weight: 400,
+  $size: 1.6rem,
+  $color: var.$text-light-color
+) {
+  font-family: "Poppins", sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
 }

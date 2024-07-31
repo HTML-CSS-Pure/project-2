@@ -1,51 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/font/stylesheet.css">
-    <link rel="stylesheet" href="./assets/css/main/grid.css">
-    <link rel="stylesheet" href="./assets/css/main/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/main/grid.css" />
+    <link rel="stylesheet" href="./assets/css/main/main.css" />
     <title>Lesson Learning</title>
-</head>
-<body style="height: 6000px;">
+  </head>
+  <body style="height: 6000px">
     <header class="header fixed">
-        <div class="content">
-            <img src="./assets/img/icon/logo.svg" alt="Lesson.">
-            <nav class="navbar">
-                <ul>
-                    <li class="active">
-                        <a href="#!">Home</a>
-                    </li>
-                    <li>                        
-                        <a href="#!">Course</a>
-                    </li>
-                    <li>                        
-                        <a href="#!">Pricing</a>
-                    </li>
-                    <li>                        
-                        <a href="#!">Reviews</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="btn">Sign Up</button>
-        </div>
+      <div class="content">
+        <img src="./assets/img/icon/logo.svg" alt="Lesson." />
+        <nav class="navbar">
+          <ul>
+            <li class="active">
+              <a href="#!">Home</a>
+            </li>
+            <li>
+              <a href="#!">Course</a>
+            </li>
+            <li>
+              <a href="#!">Pricing</a>
+            </li>
+            <li>
+              <a href="#!">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn">Sign Up</button>
+      </div>
     </header>
     <main id="main" class="main">
-        <section class="hero">
-            <div class="content">
-                <div class="media-block">
-                    <img src="" alt="">
-                    <div class="media-block-course"></div>
+      <section class="hero">
+        <div class="content">
+          <div class="media-block">
+            <img
+              class="block-img"
+              src="./assets/img/hero-img.jpg"
+              alt="Course"
+            />
+            <div class="course">
+              <div class="course-list">
+                <div class="course-item">
+                  <img
+                    src="./assets/img/icon/list.svg"
+                    alt="UI/UX Design"
+                    style="--icon-color: #fff9e8"
+                  />
+                  <div class="course-content">
+                    <p class="count">20 Courses</p>
+                    <h3 class="title">UI/UX Design</h3>
+                  </div>
                 </div>
-                <div class="content-block">
-                    <h1 class="title">Learn without limits and spread knowledge.</h1>
-                    <p class="desc">Build new skills for that “this is my year” feeling with courses, certificates, and degrees from world-class universities and companies.</p>
-                    <div class="action-btn"></div>
-                    <div class="stats"></div>
+                <div class="course-item">
+                  <img
+                    src="./assets/img/icon/code.svg"
+                    alt="Development"
+                    style="--icon-color: #fcefff"
+                  />
+                  <div class="course-content">
+                    <p class="count">30 Courses</p>
+                    <h3 class="title">Development</h3>
+                  </div>
                 </div>
+                <div class="course-item">
+                  <img
+                    src="./assets/img/icon/speaker.svg"
+                    alt="Marketing"
+                    style="--icon-color: #ebeaff"
+                  />
+                  <div class="course-content">
+                    <p class="count">40 Courses</p>
+                    <h3 class="title">Marketing</h3>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="content-block">
+            <h1 class="title">Learn without limits and spread knowledge.</h1>
+            <p class="desc">
+              Build new skills for that “this is my year” feeling with courses,
+              certificates, and degrees from world-class universities and
+              companies.
+            </p>
+            <div class="btn-group">
+              <button class="btn course">See Courses</button>
+              <button class="video">
+                <img src="./assets/img/icon/play.svg" alt="Play" class="play" />
+                <span class="action">Watch Video</span>
+              </button>
+            </div>
+            <div class="stats">
+              <p class="title">Recent engagement</p>
+              <p class="info">
+                <span><strong>50K</strong>Students</span>
+                <span><strong>70+</strong>Courses</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
