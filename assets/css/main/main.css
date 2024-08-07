@@ -252,18 +252,116 @@ a {
   line-height: 1.23;
 }
 
+.courses {
+  margin: 135px 0px;
+  padding: 65px 0px;
+}
+.courses-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.courses-header .info {
+  width: 39%;
+}
+.courses-header .info-title {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  color: #171100;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+.courses-header .info-desc {
+  margin-top: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #5F5B53;
+}
+.courses-header .control-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #FFB900;
+  color: #FFB900;
+}
+.courses-header .control-btn:hover {
+  background: #FFB900;
+  color: #fff;
+}
+.courses-header .control-btn + .control-btn {
+  margin-left: 14px;
+}
+.courses-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+.courses-item:hover {
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+.courses-item img.thumb {
+  border-radius: 12px 12px 0px 0px;
+  width: 100%;
+  height: 278px;
+  object-fit: cover;
+  display: block;
+}
+.courses-item .courses-item-content {
+  padding: 16px 22px 22px;
+  border-radius: 0px 0px 12px 12px;
+  background: #fff;
+  border: 1px solid #e2dfda;
+}
+.courses-item .courses-item-content .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courses-item .courses-item-content .head .title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #171100;
+  line-height: 1.67;
+}
+.courses-item .courses-item-content .head .star {
+  display: flex;
+  align-items: center;
+}
+.courses-item .courses-item-content .head .star-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+.courses-item .courses-item-content .head .star-value {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #FFB900;
+  line-height: 1.75;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .btn {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
-  color: #FFF;
+  color: #fff;
   line-height: 1.75;
   font-family: inherit;
   min-width: 118px;
   height: 50px;
   border: none;
   border-radius: 999px;
-  color: #FFF;
+  color: #fff;
   background: #171100;
   transition: all ease 0.25s;
   cursor: pointer;
