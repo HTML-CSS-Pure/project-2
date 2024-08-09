@@ -97,6 +97,31 @@
           line-height: 1.75;
         }
       }
+
+      .desc {
+        margin-top: 6px;
+        @include var.paragraphFont($size : 1.4rem);
+        line-height: 1.85;
+      }
+
+      .foot {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .price {
+          color: #171100;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 1.67; 
+        }
+
+        .btn {
+          font-size: 1.4rem;
+          line-height: 1.85;
+        }
+      }
     }
   }
 }

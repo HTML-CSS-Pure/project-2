@@ -342,6 +342,72 @@ a {
   color: #FFB900;
   line-height: 1.75;
 }
+.courses-item .courses-item-content .desc {
+  margin-top: 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #5F5B53;
+  line-height: 1.85;
+}
+.courses-item .courses-item-content .foot {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courses-item .courses-item-content .foot .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.courses-item .courses-item-content .foot .btn {
+  font-size: 1.4rem;
+  line-height: 1.85;
+}
+
+.feedback {
+  background-color: #2E2100;
+  padding: 96px 0px;
+}
+.feedback-item {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback-user img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.feedback-user .username {
+  margin-top: 18px;
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #F7F7F7;
+  line-height: 1.42;
+}
+.feedback-user .user-job {
+  margin-top: 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #BFBCB2;
+}
+.feedback-content {
+  width: 66%;
+}
+.feedback-content blockquote {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2.6rem;
+  color: #FFF;
+  font-style: italic;
+  line-height: 1.54;
+  margin: 0 0 0 30px;
+}
 
 button {
   border: none;
