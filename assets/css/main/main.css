@@ -371,8 +371,33 @@ a {
   background-color: #2E2100;
   padding: 96px 0px;
 }
+.feedback .content {
+  position: relative;
+}
+.feedback-nav {
+  display: flex;
+  gap: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.feedback-nav .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+}
+.feedback-nav .dot.active {
+  background: #FFB900;
+}
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
 .feedback-item {
   display: flex;
+  flex-shrink: 0;
+  width: 100%;
   justify-content: space-between;
 }
 .feedback-user img {
