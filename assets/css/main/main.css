@@ -434,6 +434,134 @@ a {
   margin: 0 0 0 30px;
 }
 
+.featured-1, .featured-2 {
+  padding-top: 65px;
+  margin-top: 135px;
+}
+.featured-1 .content, .featured-2 .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-1 img, .featured-2 img {
+  object-fit: cover;
+}
+
+.featured-1 .featured-image {
+  width: 48%;
+  display: flex;
+  gap: 30px;
+}
+.featured-1 .featured-image img {
+  width: 270px;
+  height: 404px;
+  border-radius: 16px;
+}
+.featured-1 .featured-image img:first-child {
+  margin-top: 34px;
+}
+.featured-1 .featured-content {
+  width: 40%;
+}
+
+.featured-2 .featured-content {
+  width: 48%;
+}
+.featured-2 .featured-image {
+  width: 40%;
+}
+.featured-2 .featured-image img {
+  width: 100%;
+  height: 404px;
+  border-radius: 20px;
+}
+
+.featured-content .title {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  color: #171100;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+.featured-content .desc {
+  margin-top: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #5F5B53;
+  line-height: 1.75;
+}
+.featured-content .btn {
+  margin-top: 32px;
+  min-width: 137px;
+}
+
+.blog {
+  margin-top: 200px;
+  padding: 96px 0;
+  background: #FFFCF4;
+}
+.blog-header {
+  text-align: center;
+}
+.blog-header .title {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  color: #171100;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+.blog-header .desc {
+  width: 448px;
+  margin: 16px auto 0;
+  line-height: 1.75;
+}
+.blog-list {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.blog-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+.blog-item .date {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #5F5B53;
+  margin: 20px 0 0 30px;
+  padding-bottom: 12px;
+  position: relative;
+  display: inline-flex;
+}
+.blog-item .date::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  margin-right: 4px;
+  top: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #FFB900;
+}
+.blog-item .date::after {
+  content: "";
+  width: calc(100% + 27px);
+  height: 1px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0.5px;
+  background: #E2DFDA;
+}
+
 button {
   border: none;
   background: none;
