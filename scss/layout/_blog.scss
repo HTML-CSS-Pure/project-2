@@ -1,70 +1,100 @@
 @use "../abstracts" as var;
 
 .blog {
-    margin-top: 200px;
-    padding: 96px 0;
-    background: #FFFCF4;
+  margin-top: 200px;
+  padding: 96px 0;
+  background: #fffcf4;
 
-    &-header {
-        text-align: center;
+  &-header {
+    text-align: center;
 
-        .title {
-            @include var.headingFont();
-            line-height: 1.26;
-            letter-spacing: -0.76px;
-        }
-
-        .desc {
-            width: 448px;
-            margin : 16px auto 0;
-            line-height: 1.75;
-        }
+    .title {
+      @include var.headingFont();
+      line-height: 1.26;
+      letter-spacing: -0.76px;
     }
 
-    &-list {
-        margin-top: 55px;
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
+    .desc {
+      width: 448px;
+      margin: 16px auto 0;
+      line-height: 1.75;
+    }
+  }
+
+  &-list {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &-item {
+    background: #fff;
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 16px 16px 0px 0px;
     }
 
-    &-item {
-        img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 16px 16px 0px 0px;
+    .blog-desc {
+      padding: 20px 20px 28px;
+
+      .date {
+        @include var.paragraphFont($size: 1.4rem);
+        padding-bottom: 12px;
+        position: relative;
+        display: inline-block;
+
+        &::before {
+          content: "";
+          position: relative;
+          display: inline-block;
+          margin-right: 4px;
+          top: -2px;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #ffb900;
         }
 
-        .date {
-            @include var.paragraphFont($size:1.4rem);
-            margin: 20px 0 0 30px;
-            padding-bottom: 12px;
-            position: relative;
-            display: inline-flex;
-
-            &::before {
-                content: "";
-                position: relative;
-                display: inline-block;
-                margin-right: 4px;
-                top: 4px;
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                background: #FFB900;
-            }
-
-            &::after {
-                content: "";
-                width: calc(100% + 27px);
-                height: 1px;
-                display: block;
-                position: absolute;
-                bottom: 0;
-                border-radius: 0.5px;
-                background: #E2DFDA;
-            }
+        &::after {
+          content: "";
+          width: calc(100% + 27px);
+          height: 1px;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          border-radius: 0.5px;
+          background: #e2dfda;
         }
+      }
     }
+
+    .blog-title {
+      margin: 12px 0;
+      @include var.paragraphFont($weight: 600, $size: 1.6rem, $color: #171100);
+      line-height: 1.75;
+      cursor: pointer;
+
+      &:hover {
+        color: #ffb900;
+      }
+    }
+
+    .link {
+      font-size: 1.4rem;
+      line-height: 1.85;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    gap: 6px;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    margin-top: 38px;
+  }
 }

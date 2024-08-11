@@ -1,72 +1,70 @@
 @use "../abstracts" as var;
 
 .feedback {
-    background-color: #2E2100;
-    padding: 96px 0px;
+  background-color: #2e2100;
+  padding: 96px 0px;
 
-    .content {
-        position: relative;
-    }
+  .content {
+    position: relative;
+  }
 
-    &-nav {
-        display: flex;
-        gap : 6px;
+  &-nav {
+    display: flex;
+    gap: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &-list {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &-item {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &-user {
+    .image {
+      width: 72px;
+      height: 72px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
         position: absolute;
-        bottom: 0;
-        left: 0;
-
-        .dot {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: #634700;
-
-            &.active {
-                background: #FFB900;
-            }
-        }
+        left: -70px;
+        top: 30px;
+      }
     }
 
-    &-list {
-        display: flex;
-        overflow: hidden;
+    .username {
+      margin-top: 18px;
+      @include var.headingFont($size: 2.4rem, $color: #f7f7f7);
+      line-height: 1.42;
     }
 
-    &-item {
-        display: flex;
-        flex-shrink: 0;
-        width: 100%;
-        justify-content: space-between;
+    .user-job {
+      margin-top: 4px;
+      @include var.paragraphFont($size: 1.4rem, $color: #bfbcb2);
     }
+  }
 
-    &-user {
-        img {
-            width: 72px;
-            height: 72px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        .username {
-            margin-top: 18px;
-            @include var.headingFont($size : 2.4rem,$color : #F7F7F7);
-            line-height: 1.42;
-        }
-
-        .user-job {
-            margin-top: 4px;
-            @include var.paragraphFont($size: 1.4rem,$color : #BFBCB2)
-        }
+  &-content {
+    width: 66%;
+    blockquote {
+      @include var.paragraphFont($size: 2.6rem, $color: #fff);
+      font-style: italic;
+      line-height: 1.54;
+      margin: 0 0 0 30px;
     }
-
-    &-content {
-        width: 66%;
-        blockquote {
-            @include var.paragraphFont($size: 2.6rem,$color : #FFF);
-            font-style: italic;
-            line-height: 1.54;
-            margin : 0 0 0 30px;
-        }
-    }
-
+  }
 }
