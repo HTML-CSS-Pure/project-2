@@ -1,4 +1,68 @@
+@use "../abstracts" as var;
+
 .footer {
   padding: 96px 0 28px;
   background: #2e2100;
+
+  .category {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554B;
+
+    .column:first-child {
+      width: 23%;
+
+      .desc {
+        @include var.paragraphFont($size:1.4rem,$color : #BFBCB2);
+        line-height: 1.85;
+        margin: 18px 0px;
+      }
+
+      .social-list {
+        display: flex;
+        gap: 17px;
+        .social-item {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    .column {
+      .footer-heading {
+        @include var.paragraphFont($size: 1.6rem, $weight : 600,$color: #FFF);
+        padding-bottom: 14px;
+        width: 130px;
+        border-bottom: 1px solid #59554B;
+        line-height:1.75;
+      }
+
+      ul.list {
+        display: flex;
+        flex-direction: column;
+        padding-top: 28px;
+        gap: 12px;
+        @include var.paragraphFont($size:1.4rem,$color:#BFBCB2);
+        line-height: 1.85;
+
+        a:hover {
+          opacity: 0.7;
+        }
+
+        strong {
+          font-weight: 600;
+          color: #FFF;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    @include var.paragraphFont($size:1.4rem,$color: #807D74);
+    line-height: 1.85;
+  }
 }
