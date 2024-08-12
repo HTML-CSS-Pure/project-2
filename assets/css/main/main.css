@@ -327,6 +327,9 @@ a {
   color: #171100;
   line-height: 1.67;
 }
+.courses-item .courses-item-content .head .title:hover {
+  color: #FFB900;
+}
 .courses-item .courses-item-content .head .star {
   display: flex;
   align-items: center;

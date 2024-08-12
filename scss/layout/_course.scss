@@ -80,6 +80,10 @@
             $color: var.$text-bold-color
           );
           line-height: 1.67;
+
+          &:hover {
+            color : #FFB900;
+          }
         }
 
         .star {
